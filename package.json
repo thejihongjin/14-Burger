@@ -1,0 +1,21 @@
+{
+  "name": "14-burger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "watch": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thejihongjin/14-Burger.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thejihongjin/14-Burger/issues"
+  },
+  "homepage": "https://github.com/thejihongjin/14-Burger#readme"
+}
