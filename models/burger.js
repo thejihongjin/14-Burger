@@ -1,3 +1,5 @@
+// make sure num arguments match orm file
+
 var orm = require("../config/orm.js");
 
 var burger = {
