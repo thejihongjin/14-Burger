@@ -1,12 +1,17 @@
-<div>
-{{!-- <div class="jumbotron bg-dark text-light"> --}}
-    {{!-- <img src="../public/assets/images/burger-transparent.png" alt="burger" style="height: 300px;width:300px"> --}}
-    <img src="../public/assets/images/burger.jpg" alt="burger">
-     {{!-- style="height: 300px;width:300px"> --}}
+<div class="jumbotron bg-dark text-light">
     <span>Eat-Da-Burger</span>
 </div>
 <div class="row">
-    <div id="burgers-left" class="col-md-6">
+    <div id="burger-form" class="col-md-4">
+        <form class="create-form">
+            <div class="form-group">
+                <input type="text" id="new-burger" name="burger">
+                <button type="submit">Submit</button>
+                <br><span>Enter a burger you want to eat and then click the "Submit" button.</span>
+            </div>
+        </form>
+    </div>
+    <div id="burgers-left" class="col-md-4">
         <ol>
             {{#each burgers}}
             {{#unless devoured}}
@@ -15,7 +20,7 @@
             {{/each}}
         </ol>
     </div>
-    <div id="burgers-devoured" class="col-md-6">
+    <div id="burgers-devoured" class="col-md-4">
         <ol>
             {{#each burgers}}
             {{#if devoured}}
@@ -23,15 +28,5 @@
             {{/if}}
             {{/each}}
         </ol>
-    </div>
-</div>
-<div class="row">
-    <div class="col-lg-12" class="text-center">
-        <form class="create-form">
-            <div class="form-group">
-                <input type="text" id="new-burger" name="burger">
-            </div>
-            <button type="submit">Submit</button>
-            <span>Enter a burger you want to eat and then click the "Submit" button.</span>
     </div>
 </div>
